@@ -1,0 +1,165 @@
+---
+settings:
+  name: Cloud Manager
+  platform: cloud
+  search: clouddocs-cloud-manager-relnotes_main-prod,clouddocs-cloud-manager-setup-admin_main-prod,clouddocs-cloud-manager-cloud-volumes-ontap_main-prod,clouddocs-cloud-manager-ontap-onprem_main-prod,clouddocs-cloud-manager-azure-netapp-files_main-prod,clouddocs-cloud-manager-fsx-ontap_main-prod,clouddocs-cloud-manager-cloud-volumes-service-aws_main-prod,clouddocs-cloud-manager-cloud-volumes-service-gcp_main-prod,clouddocs-cloud-manager-kubernetes_main-prod,clouddocs-cloud-manager-object-storage_main-prod,clouddocs-cloud-manager-app-template_main-prod,clouddocs-cloud-manager-backup-restore_main-prod,clouddocs-cloud-manager-snapcenter_main-prod,clouddocs-cloud-manager-sync_main-prod,clouddocs-cloud-manager-data-sense_main-prod,clouddocs-cloud-manager-tiering_main-prod,clouddocs-cloud-manager-ransomware_main-prod,clouddocs-cloud-manager-replication_main-prod,clouddocs-cloud-manager-monitoring_main-prod,clouddocs-cloud-manager-file-cache_main-prod,clouddocs-cloud-manager-compute_main-prod,clouddocs-cloud-manager-automation_main-prod,clouddocs-cloud-volumes-ontap-relnotes_main-prod
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-cn,us-en,ja-jp,ko-kr
+sidebar:
+  entries:
+  - title: 所有 Cloud Manager 文档
+    url: "/index.html"
+product-family:
+  sidebarlinks:
+  - title: 所有内容
+    tags: all
+    class: active
+  - title: 入门
+    tags: get-started
+  - title: 发行说明
+    tags: relnotes
+  - title: 连接器和帐户
+    tags: admin
+  - title: 可操作的智能
+    tags: activeiq
+  - title: Amazon Web Services
+    tags: aws
+  - title: 自动化
+    tags: automation
+  - title: 计算
+    tags: compute
+  - title: 数据监管
+    tags: governance
+  - title: 数据保护
+    tags: protection
+  - title: 数据复制
+    tags: replication
+  - title: 文件共享
+    tags: sharing
+  - title: Kubernetes
+    tags: kubernetes
+  - title: Microsoft Azure
+    tags: azure
+  - title: 监控
+    tags: monitoring
+  - title: Google Cloud
+    tags: gcp
+  - title: 勒索软件
+    tags: ransomware
+  - title: 存储
+    tags: storage
+  tiles:
+  - title: 设置和管理
+    icon: "./media/icon-docs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html
+    summary: 了解如何开始使用 Cloud Manager 并管理连接器，帐户等。
+    tags: all, get-started, admin
+  - title: 发行说明
+    icon: "./media/icon-docs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-relnotes/index.html
+    summary: 了解所有 Cloud Manager 的新增功能。
+    tags: all, relnotes
+  - title: Active IQ 数字顾问
+    icon: "./media/icon-activeiq.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/concept-aiq-digital-advisor.html
+    tags: all, activeiq
+    summary: 提供可操作的智能信息，以实现最佳存储运行状况。
+  - title: 适用于 ONTAP 的 Amazon FSX
+    icon: "./media/icon-fsx.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html
+    summary: 将 ONTAP 的全部功能用作原生 AWS 管理的服务。
+    tags: all, storage, aws
+  - title: API
+    icon: "./media/icon-api.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-automation/index.html
+    summary: 以编程方式管理基于云的资源。
+    tags: all, api, automation
+  - title: 应用程序模板
+    icon: "./media/icon-app-template.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-app-template/index.html
+    summary: 在 Cloud Manager 中自动执行操作，以加快配置速度并消除手动工作。
+    tags: all, automation
+  - title: Azure NetApp Files
+    icon: "./media/icon-anf.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html
+    summary: 适用于核心业务应用程序的高性能文件存储服务。
+    tags: all, storage, azure
+  - title: 云备份
+    icon: "./media/icon-backup.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html
+    summary: 备份和还原云和内部数据。
+    tags: all, aws, azure, gcp, protection
+  - title: 云数据感知
+    icon: "./media/icon-data-sense.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html
+    summary: 让您的应用程序数据和云环境做好隐私准备。
+    tags: all, governance, aws, azure, gcp
+  - title: Cloud Sync
+    icon: "./media/icon-sync.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-sync/index.html
+    summary: 在内部数据存储和云数据存储之间同步数据。
+    tags: all, aws, azure, gcp, replication
+  - title: 云分层
+    icon: "./media/icon-tiering.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-tiering/index.html
+    summary: 将内部 ONTAP 存储扩展到云。
+    tags: all, aws, azure, gcp
+  - title: Cloud Volumes ONTAP
+    icon: "./media/icon-cvo.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html
+    summary: 让您的云存储更经济实惠，更智能，更合规，更安全。
+    tags: all, storage, aws, azure, gcp
+  - title: 适用于 AWS 的 Cloud Volumes Service
+    icon: "./media/icon-cvs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/index.html
+    summary: 具有全闪存性能的 Cloud 原生文件服务。
+    tags: all, storage, aws
+  - title: 适用于 Google Cloud 的 Cloud Volumes Service
+    icon: "./media/icon-cvs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/index.html
+    summary: 保护，保护和加速文件存储。
+    tags: all, storage, gcp
+  - title: 计算
+    icon: "./media/icon-compute.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-compute/index.html
+    summary: 深入了解您的云计算支出并确定潜在节省量。
+    tags: all, compute, aws
+  - title: 全局文件缓存
+    icon: "./media/icon-cache.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-file-cache/index.html
+    summary: 为分布式员工实现实时全局文件共享。
+    tags: all, sharing, aws, azure, gcp
+  - title: Kubernetes 集群
+    icon: "./media/icon-kubernetes.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-kubernetes/index.html
+    summary: 对混合云中的 Kubernetes 集群进行高级数据管理。
+    tags: all, kubernetes, aws, azure
+  - title: 监控
+    icon: "./media/icon-monitoring.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-monitoring/index.html
+    summary: 深入了解 Cloud Volumes ONTAP 的运行状况和性能。
+    tags: all, monitoring
+  - title: 内部 ONTAP 集群
+    icon: "./media/icon-onprem.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html
+    summary: 跨混合云管理 NetApp AFF 和 FAS 系统。
+    tags: all, storage
+  - title: 勒索软件保护
+    icon: "./media/icon-ransomware.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-ransomware/index.html
+    summary: 评估数据对网络攻击的弹性。
+    tags: all, ransomware
+  - title: Replication
+    icon: "./media/icon-replication.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-replication/index.html
+    summary: 在存储系统之间复制数据以支持备份和灾难恢复。
+    tags: all, replication, protection
+  - title: SnapCenter 服务
+    icon: "./media/icon-snapcenter.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-snapcenter/index.html
+    summary: 在云中实现应用程序一致的数据保护。
+    tags: all, protection
