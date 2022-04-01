@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>Cloud Manager 文档 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Cloud Manager 文档 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloud-manager-family/index.html" />
+	<meta property="og:description" content="Cloud Manager 为 IT 专家和云架构师提供了一个中央控制平台，用于管理，监控混合云环境中的数据并实现数据自动化。按产品区域浏览文档，或使用上述搜索功能在 Cloud Manager 文档中的任意位置查找内容。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloud-manager-family/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Manager 为 IT 专家和云架构师提供了一个中央控制平台，用于管理，监控混合云环境中的数据并实现数据自动化。按产品区域浏览文档，或使用上述搜索功能在 Cloud Manager 文档中的任意位置查找内容。">
+  <meta name="keywords" content=" "><!-- Icons -->
+  <link rel="icon" href="/zh-cn/cloud-manager-family/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/cloud-manager-family/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-family/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-family/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-family/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-family/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-family/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-family/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-family/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-family/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-cn/cloud-manager-family/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-cn/cloud-manager-family/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-family/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-family/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-family/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-family/css/tabbed-blocks.css" type="text/css">
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-family/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/zh-cn/cloud-manager-family/css/product-family.css' type="text/css">
+  <script src='/zh-cn/cloud-manager-family/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/cloud-manager-family/js/na-search.js'></script><script src='/zh-cn/cloud-manager-family/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/cloud-manager-family/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-family/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-cn/cloud-manager-family/js/na-utility.js'></script>
+  <script src='/zh-cn/cloud-manager-family/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/zh-cn/cloud-manager-family/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-cn/cloud-manager-family/js/toc.js'></script>
+  <script src='/zh-cn/cloud-manager-family/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/zh-cn/cloud-manager-family/js/version-dropdown.js'></script>
+  <script src='/zh-cn/cloud-manager-family/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/cloud-manager-family/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/cloud-manager-family/js/jszip.min.js'></script>
+  <script src='/zh-cn/cloud-manager-family/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-family/issues/new?body=Page%3A%20[Cloud Manager 文档](https://docs.netapp.com/zh-cn/cloud-manager-family/index.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-family/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-family/blob/main/index.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-family/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-family/images/article-sm.svg" class="github-icon" />提供者指南</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">产品和解决方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支持和培训</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">云中心</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社区</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">日志</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客户案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-cn/cloud-manager-family/search.html"
+          data-type="widget" 
+          data-placeholder="搜索文档" 
+          data-no-results-found="未找到与 {query} 匹配的结果。" 
+          data-did-you-mean="搜索 {suggestion}。" 
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
+          data-results-found="找到 {hitCount} 个结果"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">简体中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <div class="ie-main product-family"><div class="col-md-3">
+    <div class="product-family-linkheading">浏览内容</div>
+    <ul id="product-family-links"><li class="active"><a href="#" class="product-family-space" data-tags="all">所有内容</a></li><li><a href="#" class="product-family-space" data-tags="get-started">入门</a></li><li><a href="#" class="product-family-space" data-tags="relnotes">发行说明</a></li><li><a href="#" class="product-family-space" data-tags="admin">连接器和帐户</a></li><li><a href="#" class="product-family-space" data-tags="activeiq">可操作的智能</a></li><li><a href="#" class="product-family-space" data-tags="aws">Amazon Web Services</a></li><li><a href="#" class="product-family-space" data-tags="automation">自动化</a></li><li><a href="#" class="product-family-space" data-tags="compute">计算</a></li><li><a href="#" class="product-family-space" data-tags="governance">数据监管</a></li><li><a href="#" class="product-family-space" data-tags="protection">数据保护</a></li><li><a href="#" class="product-family-space" data-tags="replication">数据复制</a></li><li><a href="#" class="product-family-space" data-tags="sharing">文件共享</a></li><li><a href="#" class="product-family-space" data-tags="kubernetes">Kubernetes</a></li><li><a href="#" class="product-family-space" data-tags="azure">Microsoft Azure</a></li><li><a href="#" class="product-family-space" data-tags="monitoring">监控</a></li><li><a href="#" class="product-family-space" data-tags="gcp">Google Cloud</a></li><li><a href="#" class="product-family-space" data-tags="ransomware">勒索软件</a></li><li><a href="#" class="product-family-space" data-tags="storage">存储</a></li></ul>
+</div>
+<div class="tile-container">
+        <article class="page-content">
+            <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/zh-cn/cloud/">云文档</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/cloud-manager-family/">Cloud&nbsp;Manager</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+            <div class="n-band n-band--docs n-band--belted">
+                <div class="n-container" style="margin: 0 auto; padding: 0 16px;">
+                    <div class="n-row">                      
+                        <div class="n-col-sm-12"><div class="ie-nmt-disclaimer">
+                              <span>
+                                <div class="ie-nmt-disclaimer-container">
+                                  <div class="ie-nmt-disclaimer-icon">
+                                    <svg class="luci-icon" aria-hidden="true">
+                                      <use xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#circle-info">
+                                    </svg>
+                                  </div>
+                                  <div class="ie-nmt-disclaimer-content">
+                                    <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+                                  </div>
+                                  <div style="clear:both;"></div>
+                                </div>
+                              </span>
+                            </div><div class="n-doc__component-detail-heading-wrap">
+                                <h1 class="n-doc__component-detail-heading">Cloud Manager 文档</h1>
+                            </div><section class="n-band__section">
+                                <p>Cloud Manager provides IT experts and cloud architects with a centralized control plane to manage, monitor, and automate data in hybrid cloud environments. Browse the docs by product area or use the search above to find content anywhere in the Cloud Manager docs.</p>
+                            </section><div class="n-band__content">
+<div id="selected-sidelink"><span>所有内容</span></div>
+    <div class="n-layout-flex product-family-tile-container" data-ntap-layout="4"><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, get-started, admin">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-docs.png" alt="设置和管理"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html'>设置和管理</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">了解如何开始使用 Cloud Manager 并管理连接器，帐户等。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, relnotes">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-docs.png" alt="发行说明"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-relnotes/index.html'>发行说明</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">了解所有 Cloud Manager 的新增功能。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, activeiq">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-activeiq.png" alt="Active IQ 数字顾问"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/concept-aiq-digital-advisor.html'>Active IQ 数字顾问</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">提供可操作的智能信息，以实现最佳存储运行状况。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, aws">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-fsx.png" alt="适用于 ONTAP 的 Amazon FSX"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html'>适用于 ONTAP 的 Amazon FSX</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">将 ONTAP 的全部功能用作原生 AWS 管理的服务。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, api, automation">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-api.png" alt="API"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-automation/index.html'>API</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">以编程方式管理基于云的资源。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, automation">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-app-template.png" alt="应用程序模板"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-app-template/index.html'>应用程序模板</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">在 Cloud Manager 中自动执行操作，以加快配置速度并消除手动工作。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, azure">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-anf.png" alt="Azure NetApp Files"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html'>Azure NetApp Files</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">适用于核心业务应用程序的高性能文件存储服务。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, aws, azure, gcp, protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-backup.png" alt="云备份"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html'>云备份</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">备份和还原云和内部数据。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, governance, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-data-sense.png" alt="云数据感知"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html'>云数据感知</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">让您的应用程序数据和云环境做好隐私准备。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, aws, azure, gcp, replication">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-sync.png" alt="Cloud Sync"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-sync/index.html'>Cloud Sync</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">在内部数据存储和云数据存储之间同步数据。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-tiering.png" alt="云分层"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-tiering/index.html'>云分层</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">将内部 ONTAP 存储扩展到云。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cvo.png" alt="Cloud Volumes ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html'>Cloud Volumes ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">让您的云存储更经济实惠，更智能，更合规，更安全。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, aws">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cvs.png" alt="适用于 AWS 的 Cloud Volumes Service"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/index.html'>适用于 AWS 的 Cloud Volumes Service</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">具有全闪存性能的 Cloud 原生文件服务。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cvs.png" alt="适用于 Google Cloud 的 Cloud Volumes Service"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/index.html'>适用于 Google Cloud 的 Cloud Volumes Service</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">保护，保护和加速文件存储。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, compute, aws">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-compute.png" alt="计算"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-compute/index.html'>计算</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">深入了解您的云计算支出并确定潜在节省量。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, sharing, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cache.png" alt="全局文件缓存"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-file-cache/index.html'>全局文件缓存</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">为分布式员工实现实时全局文件共享。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, kubernetes, aws, azure">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-kubernetes.png" alt="Kubernetes 集群"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-kubernetes/index.html'>Kubernetes 集群</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">对混合云中的 Kubernetes 集群进行高级数据管理。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, monitoring">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-monitoring.png" alt="监控"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-monitoring/index.html'>监控</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">深入了解 Cloud Volumes ONTAP 的运行状况和性能。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-onprem.png" alt="内部 ONTAP 集群"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html'>内部 ONTAP 集群</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">跨混合云管理 NetApp AFF 和 FAS 系统。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, ransomware">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-ransomware.png" alt="勒索软件保护"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-ransomware/index.html'>勒索软件保护</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">评估数据对网络攻击的弹性。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, replication, protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-replication.png" alt="Replication"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-replication/index.html'>Replication</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">在存储系统之间复制数据以支持备份和灾难恢复。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-snapcenter.png" alt="SnapCenter 服务"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-snapcenter/index.html'>SnapCenter 服务</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">在云中实现应用程序一致的数据保护。</p>
+                </div>
+            </div>
+        </div></div>
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="page-nav-toolbar"></div>
+    <div style="clear:both"></div>
+</div>
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
+  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/cloud-manager-family/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/cloud-manager-family/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/cloud-manager-family/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/cloud-manager-family/js/www-ntap.js'></script>
+    <script src='/zh-cn/cloud-manager-family/js/tabbed-blocks.js'></script>
+  </body></html>
