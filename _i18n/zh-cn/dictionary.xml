@@ -46,24 +46,18 @@
   <block id="801137ecb911e137717f3efd696e31cd" category="summary">Cloud Manager 为 IT 专家和云架构师提供了一个中央控制平台，用于管理，监控混合云环境中的数据并实现数据自动化。按产品区域浏览文档，或使用上述搜索功能在 Cloud Manager 文档中的任意位置查找内容。</block>
   <block id="b3a853d57fdef5749cc6f40650ebaac6" category="doc">Cloud Manager 文档</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
-  <block id="3cf34f74121b51a5916fab60bb6188d0" category="sidebar">所有内容</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="8e5adb4723e04a1f9bf2ea7df2c5e684" category="sidebar">连接器和帐户</block>
-  <block id="ea627596cdd2147f06ea8115fe33f80e" category="sidebar">可操作的智能</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services</block>
   <block id="caea8340e2d186a540518d08602aa065" category="sidebar">自动化</block>
   <block id="a623a8d0366bf079411aa30be45b2d10" category="sidebar">计算</block>
   <block id="981bffcb165038c7fa06d58ef1c4cdaf" category="sidebar">数据监管</block>
   <block id="7e7397a7b79323762c61941fc0e6b5f9" category="sidebar">数据保护</block>
-  <block id="0a9e63106b5735d38d5bf5377346f3ed" category="sidebar">数据复制</block>
   <block id="4877a4fced94635d9abbb2464ddef37a" category="sidebar">文件共享</block>
   <block id="30136395f01879792198317c11831ea4" category="sidebar">Kubernetes</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">Microsoft Azure</block>
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="sidebar">监控</block>
   <block id="56ef2682280ac110060b881925a87b80" category="sidebar">Google Cloud</block>
-  <block id="232a2b16a1710c0ed1d16548ba8bb8f1" category="sidebar">勒索软件</block>
-  <block id="8c4aa541ee911e8d80451ef8cc304806" category="sidebar">存储</block>
   <block id="30b77b282030e8985671bcc89e3e4d74" category="sidebar">设置和管理</block>
   <block id="ebf83dc6f9abc581c0cbcf7c286c6bed" category="sidebar">了解如何开始使用 Cloud Manager 并管理连接器，帐户等。</block>
   <block id="72f9d32a77debe2f3f6cfa4485880344" category="sidebar">了解所有 Cloud Manager 的新增功能。</block>
@@ -105,4 +99,8 @@
   <block id="852e5aa5bab2b81469e97f26b6e2b7f3" category="sidebar">在存储系统之间复制数据以支持备份和灾难恢复。</block>
   <block id="fed6fa1f1b675c268f8b78258e2545a7" category="sidebar">SnapCenter 服务</block>
   <block id="f0f6cb7dbb43bbd1b2c2edeb9f51c21b" category="sidebar">在云中实现应用程序一致的数据保护。</block>
+  <block id="b1c94ca2fbc3e78fc30069c8d0f01680" category="sidebar">全部</block>
+  <block id="05ccfbea6601dcca671775f24a6b14d3" category="sidebar">代码示例</block>
+  <block id="dc21b082b0947a93d387b8c7e8f89ee5" category="sidebar">数据存储</block>
+  <block id="396928510e06818ef017921022cce2af" category="sidebar">数据分层</block>
 </blocks>

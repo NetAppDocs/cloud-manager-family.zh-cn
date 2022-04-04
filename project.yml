@@ -15,43 +15,37 @@ sidebar:
     url: "/index.html"
 product-family:
   sidebarlinks:
-  - title: 所有内容
+  - title: 全部
     tags: all
     class: active
-  - title: 入门
-    tags: get-started
-  - title: 发行说明
-    tags: relnotes
-  - title: 连接器和帐户
-    tags: admin
-  - title: 可操作的智能
-    tags: activeiq
   - title: Amazon Web Services
     tags: aws
   - title: 自动化
     tags: automation
+  - title: 代码示例
+    tags: code
   - title: 计算
     tags: compute
+  - title: 连接器和帐户
+    tags: admin
   - title: 数据监管
     tags: governance
   - title: 数据保护
     tags: protection
-  - title: 数据复制
-    tags: replication
+  - title: 数据存储
+    tags: storage
+  - title: 数据分层
+    tags: tiering
   - title: 文件共享
     tags: sharing
+  - title: Google Cloud
+    tags: gcp
   - title: Kubernetes
     tags: kubernetes
   - title: Microsoft Azure
     tags: azure
   - title: 监控
     tags: monitoring
-  - title: Google Cloud
-    tags: gcp
-  - title: 勒索软件
-    tags: ransomware
-  - title: 存储
-    tags: storage
   tiles:
   - title: 设置和管理
     icon: "./media/icon-docs.png"
@@ -62,11 +56,11 @@ product-family:
     icon: "./media/icon-docs.png"
     url: https://docs.netapp.com/us-en/cloud-manager-relnotes/index.html
     summary: 了解所有 Cloud Manager 的新增功能。
-    tags: all, relnotes
+    tags: all
   - title: Active IQ 数字顾问
     icon: "./media/icon-activeiq.png"
     url: https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/concept-aiq-digital-advisor.html
-    tags: all, activeiq
+    tags: all, monitoring
     summary: 提供可操作的智能信息，以实现最佳存储运行状况。
   - title: 适用于 ONTAP 的 Amazon FSX
     icon: "./media/icon-fsx.png"
@@ -77,7 +71,7 @@ product-family:
     icon: "./media/icon-api.png"
     url: https://docs.netapp.com/us-en/cloud-manager-automation/index.html
     summary: 以编程方式管理基于云的资源。
-    tags: all, api, automation
+    tags: all, code
   - title: 应用程序模板
     icon: "./media/icon-app-template.png"
     url: https://docs.netapp.com/us-en/cloud-manager-app-template/index.html
@@ -107,7 +101,7 @@ product-family:
     icon: "./media/icon-tiering.png"
     url: https://docs.netapp.com/us-en/cloud-manager-tiering/index.html
     summary: 将内部 ONTAP 存储扩展到云。
-    tags: all, aws, azure, gcp
+    tags: all, aws, azure, gcp, tiering
   - title: Cloud Volumes ONTAP
     icon: "./media/icon-cvo.png"
     url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html
@@ -152,12 +146,12 @@ product-family:
     icon: "./media/icon-ransomware.png"
     url: https://docs.netapp.com/us-en/cloud-manager-ransomware/index.html
     summary: 评估数据对网络攻击的弹性。
-    tags: all, ransomware
+    tags: all, protection
   - title: Replication
     icon: "./media/icon-replication.png"
     url: https://docs.netapp.com/us-en/cloud-manager-replication/index.html
     summary: 在存储系统之间复制数据以支持备份和灾难恢复。
-    tags: all, replication, protection
+    tags: all, protection
   - title: SnapCenter 服务
     icon: "./media/icon-snapcenter.png"
     url: https://docs.netapp.com/us-en/cloud-manager-snapcenter/index.html
