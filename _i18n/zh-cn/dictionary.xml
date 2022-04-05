@@ -8,17 +8,11 @@
   <block id="14b05cf61f1aba58d38b393e69b69538" category="list-text">如果您还没有 NetApp 支持站点帐户，<block ref="0a8e82436ea73fe635862cfba3acf101" category="inline-link-rx"></block>。</block>
   <block id="0046efb3377274ff3215d4b30269809e" category="list-text">在 Cloud Manager 控制台右上角，单击帮助图标，然后选择 * 支持 * 。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">帮助菜单的屏幕截图，其中列出的第一个选项为支持</block>
-  <block id="357be4e47fe6e7132dca092006062510" category="paragraph"><block ref="357be4e47fe6e7132dca092006062510" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">单击 * NSS 管理 &gt; 添加 NSS 帐户 * 。</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出现提示时，单击 * 继续 * 以重定向到 Microsoft 登录页面。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp 使用 Microsoft Azure Active Directory 作为身份提供程序来提供特定于支持和许可的身份验证服务。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登录页面上，提供 NetApp 支持站点注册的电子邮件地址和密码以执行身份验证过程。</block>
   <block id="f5fb4199485234c409525f430b737010" category="paragraph">此操作可使 Cloud Manager 使用您的 NSS 帐户。</block>
-  <block id="56adf724101d4208ec84510dd5141cbe" category="paragraph">请注意帐户的以下要求：</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">此帐户必须是客户级别的帐户（而不是来宾或临时帐户）。</block>
-  <block id="f35b3071eb18e73b5274b2d3930c1cec" category="list-text">如果您计划部署基于节点的 BYOL 系统：</block>
-  <block id="4f67a838013dae97fbc2ef8c52275e5d" category="list-text">帐户必须获得访问 BYOL 系统序列号的授权。</block>
-  <block id="920eb18d0b8767d6fc05b934ad81e34b" category="list-text">如果您购买了安全的 BYOL 订阅，则需要安全的 NSS 帐户。</block>
   <block id="fc65ebd4739f2f8ca46062a8280faea9" category="section-title">注册您的帐户以获得支持</block>
   <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">支持注册可从 Cloud Manager 的支持信息板中获取。</block>
   <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">在 * 资源 * 选项卡中，单击 * 注册支持 * 。</block>
@@ -103,4 +97,6 @@
   <block id="05ccfbea6601dcca671775f24a6b14d3" category="sidebar">代码示例</block>
   <block id="dc21b082b0947a93d387b8c7e8f89ee5" category="sidebar">数据存储</block>
   <block id="396928510e06818ef017921022cce2af" category="sidebar">数据分层</block>
+  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b4c6a2f33e7b2a38495546b8d5cd8e84" category="paragraph">请注意，此帐户必须是客户级别的帐户（而不是来宾或临时帐户）。</block>
 </blocks>
