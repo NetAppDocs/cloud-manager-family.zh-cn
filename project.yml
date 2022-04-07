@@ -7,6 +7,13 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  search: cloud-manager-relnotes, cloud-manager-setup-admin, cloud-manager-cloud-volumes-ontap,
+    cloud-manager-ontap-onprem, cloud-manager-azure-netapp-files, cloud-manager-fsx-ontap,
+    cloud-manager-cloud-volumes-service-aws, cloud-manager-cloud-volumes-service-gcp,
+    cloud-manager-kubernetes, cloud-manager-app-template, cloud-manager-backup-restore,
+    cloud-manager-snapcenter, ccloud-manager-sync, cloud-manager-data-sense, cloud-manager-tiering,
+    cloud-manager-ransomware, cloud-manager-replication, cloud-manager-monitoring,
+    cloud-manager-file-cache, cloud-manager-compute, cloud-manager-automation, cloud-volumes-ontap-relnotes
   langs: zh-cn,us-en,ja-jp,ko-kr
 sidebar:
   entries:
