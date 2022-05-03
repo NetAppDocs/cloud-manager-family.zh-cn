@@ -1,4 +1,5 @@
 = 添加 NSS 帐户
+:allow-uri-read: 
 
 
 在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。

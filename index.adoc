@@ -6,6 +6,7 @@ summary: Cloud Manager 为 IT 专家和云架构师提供了一个中央控制�
 ---
 = Cloud Manager 文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
