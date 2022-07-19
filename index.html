@@ -248,11 +248,13 @@
           <div id="react-search" 
           data-search-html="/zh-cn/cloud-manager-family/search.html"
           data-type="widget" 
-          data-placeholder="搜索文档" 
-          data-no-results-found="未找到与 {query} 匹配的结果。" 
-          data-did-you-mean="搜索 {suggestion}。" 
-          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
-          data-results-found="找到 {hitCount} 个结果"  
+          data-placeholder="搜索文档"
+          data-no-results-found="未找到与 {query} 匹配的结果。"
+          data-did-you-mean="搜索 {suggestion}。"
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?"
+          data-results-found="找到 {hitCount} 个结果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -267,35 +269,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-family/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/index.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-family/index.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-family/index.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-family/index.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/index.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -333,7 +327,7 @@
 
         <main id="n-main-content" class="n-main-content">
           <div class="ie-main product-family"><div class="col-md-3">
-    <div class="product-family-linkheading">浏览内容</div>
+    <div class="product-family-linkheading">按产品功能筛选</div>
     <ul id="product-family-links"><li class="active"><a href="#" class="product-family-space" data-tags="all">全部</a></li><li><a href="#" class="product-family-space" data-tags="aws">Amazon Web Services</a></li><li><a href="#" class="product-family-space" data-tags="automation">自动化</a></li><li><a href="#" class="product-family-space" data-tags="code">代码示例</a></li><li><a href="#" class="product-family-space" data-tags="compute">计算</a></li><li><a href="#" class="product-family-space" data-tags="admin">连接器和帐户</a></li><li><a href="#" class="product-family-space" data-tags="governance">数据监管</a></li><li><a href="#" class="product-family-space" data-tags="protection">数据保护</a></li><li><a href="#" class="product-family-space" data-tags="storage">数据存储</a></li><li><a href="#" class="product-family-space" data-tags="tiering">数据分层</a></li><li><a href="#" class="product-family-space" data-tags="sharing">文件共享</a></li><li><a href="#" class="product-family-space" data-tags="gcp">Google Cloud</a></li><li><a href="#" class="product-family-space" data-tags="kubernetes">Kubernetes</a></li><li><a href="#" class="product-family-space" data-tags="azure">Microsoft Azure</a></li><li><a href="#" class="product-family-space" data-tags="monitoring">监控</a></li></ul>
 </div>
 <div class="tile-container">
@@ -800,4 +794,5 @@
     </script>
     <script src='/zh-cn/cloud-manager-family/js/www-ntap.js'></script>
     <script src='/zh-cn/cloud-manager-family/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/cloud-manager-family/js/sidebar.js'></script>
   </body></html>
